@@ -1,0 +1,9 @@
+[
+  {
+    "id": "1",
+    "username": "johndoe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "hasPaidForEvent": false
+  }
+]
