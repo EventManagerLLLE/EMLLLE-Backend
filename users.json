@@ -5,5 +5,19 @@
     "firstName": "John",
     "lastName": "Doe",
     "hasPaidForEvent": false
+  },
+  {
+    "id": "e2733265-ecab-41db-9a0c-575d5b2530d0",
+    "username": "jddohndoe",
+    "firstName": "Jdohn",
+    "lastName": "Ddoe",
+    "hasPaidForEvent": true
+  },
+  {
+    "id": "91ec795d-3f1f-4a4b-b9aa-985e16acfe92",
+    "username": "luka",
+    "firstName": "Luka",
+    "lastName": "Arsenijevic",
+    "hasPaidForEvent": true
   }
 ]
