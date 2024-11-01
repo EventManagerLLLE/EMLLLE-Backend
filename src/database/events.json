@@ -1,0 +1,119 @@
+[
+  {
+    "id": "f997811a-4bf5-4f65-ae0a-94faac2710ae",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa4",
+    "title": "ptice trcexxx",
+    "date": "2024-12-24",
+    "isPublic": false,
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "registrationOptions": {
+      "isRegistrationRequired": true,
+      "requiresApproval": true,
+      "requiresPayment": false,
+      "allowMultipleOptions": false
+    },
+    "participants": [
+      {
+        "id": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+        "firstName": "223",
+        "lastName": "21",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-12-24"
+      }
+    ]
+  },
+  {
+    "id": "a80de83f-fed4-4288-8a47-ca700f6c2c37",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+    "title": "ptice trce",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "registrationOptions": {
+      "isRegistrationRequired": false,
+      "requiresApproval": false,
+      "requiresPayment": false,
+      "allowMultipleOptions": false
+    }
+  },
+  {
+    "id": "ec6eb62e-0774-4be6-87b2-8a54c09e0dd4",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+    "title": "ptice trce",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "registrationOptions": {
+      "isRegistrationRequired": false,
+      "requiresApproval": false,
+      "requiresPayment": false,
+      "allowMultipleOptions": false
+    },
+    "participants": []
+  },
+  {
+    "id": "bf1a33ef-cee5-4554-a604-122d9053d164",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+    "title": "ptice trce",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "isPublic": false,
+    "registrationOptions": {
+      "isRegistrationRequired": true,
+      "requiresApproval": true,
+      "requiresPayment": true,
+      "allowMultipleOptions": false
+    }
+  },
+  {
+    "id": "1eb83c2c-c8c9-463a-9750-df6733ddc1ea",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+    "title": "ptice trce",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "isPublic": false,
+    "registrationOptions": {
+      "isRegistrationRequired": true,
+      "requiresApproval": false,
+      "requiresPayment": true,
+      "allowMultipleOptions": false
+    }
+  },
+  {
+    "id": "7d87a298-c325-478c-9256-65531bb6ec53",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+    "title": "ptice trce",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "isPublic": false,
+    "registrationOptions": {
+      "isRegistrationRequired": true,
+      "requiresApproval": false,
+      "requiresPayment": true,
+      "allowMultipleOptions": false
+    }
+  }
+]

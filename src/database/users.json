@@ -19,5 +19,13 @@
     "firstName": "Luka",
     "lastName": "Arsenijevic",
     "hasPaidForEvent": true
+  },
+  {
+    "id": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+    "username": "testuser",
+    "firstName": "Test",
+    "lastName": "User",
+    "hasPaidForEvent": true,
+    "password": "$2b$10$EMmJTP7IFjhLkuhp7WIF3.QzwvUl/G7DKPDv1J7yF0QylVmJT/oFy"
   }
 ]

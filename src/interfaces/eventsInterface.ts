@@ -1,3 +1,5 @@
+import { User } from '../schemas/userSchema';
+import { Organization } from './interfaceOrganization';
 export interface Event {
   id: string;
   name: string;
@@ -6,4 +8,8 @@ export interface Event {
   information: string;
   updates: string;
   dateAndTime: Date;
+  userId: string;
+  organizationId: string;
+  user?: User;
+  organization?: Organization;
 }
