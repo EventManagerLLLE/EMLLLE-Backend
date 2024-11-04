@@ -34,5 +34,12 @@
     "firstName": "Test",
     "lastName": "User",
     "password": "$2b$10$mB62MnYJOPoy/B7usdSl6uNLYRi9BBAgdtagjtAVMULNvxaYu1oTi"
+  },
+  {
+    "id": "7024c066-92d8-44bf-adb9-d5c05ad11d38",
+    "username": "testuser",
+    "firstName": "Test",
+    "lastName": "User",
+    "password": "$2b$10$ytfuIHHhi39lOOlosjPj2uRVSwhhrsx40ZXV5O2DehPCo1LH7RLp6"
   }
 ]
