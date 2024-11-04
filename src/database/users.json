@@ -41,5 +41,26 @@
     "firstName": "Test",
     "lastName": "User",
     "password": "$2b$10$ytfuIHHhi39lOOlosjPj2uRVSwhhrsx40ZXV5O2DehPCo1LH7RLp6"
+  },
+  {
+    "id": "c74b31b2-8d03-4778-ba06-b47736cd20b2",
+    "username": "testuser",
+    "firstName": "Test",
+    "lastName": "User",
+    "password": "$2b$10$e8Ss7BoXNYj9qepr3TdTVesf6sZYtuatxMgW/.bF8CAyXc4gbhxEq"
+  },
+  {
+    "id": "c0113fdc-65e7-4b06-bd15-d82fc4077a11",
+    "username": "luka",
+    "firstName": "luka",
+    "lastName": "luka",
+    "password": "$2b$10$gqrsBH9pGeVeP9NE9CQ0jeNF4QSZ16c97bQmag5Tw.P1lFP6f6zZy"
+  },
+  {
+    "id": "948cdd8c-8c60-442a-83df-d953d885303b",
+    "username": "luka",
+    "firstName": "luka",
+    "lastName": "luka",
+    "password": "$2b$10$q9Idwt70rCenZIiIy.gmpOO56xSZaI5Pr5q67cUai9a8GVqAI/Kyi"
   }
 ]
