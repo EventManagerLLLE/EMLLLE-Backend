@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
+import cors from 'cors';
 import eventsRoutes from './api/events';
 import organizationsRoutes from './api/organizations';
 import userRoutes from './api/users';
@@ -8,6 +9,7 @@ import userRoutes from './api/users';
 dotenv.config({ path: './src/.env' });
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const JWT_SECRET = process.env.JWT_SECRET;
 if (!JWT_SECRET) {
