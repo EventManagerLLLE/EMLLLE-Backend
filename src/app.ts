@@ -1,9 +1,9 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import dotenv from 'dotenv';
-import userRoutes from './api/users';
-import organizationsRoutes from './api/organizations';
 import eventsRoutes from './api/events';
+import organizationsRoutes from './api/organizations';
+import userRoutes from './api/users';
 
 dotenv.config({ path: './src/.env' });
 const app = express();
