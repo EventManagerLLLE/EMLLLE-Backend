@@ -27,5 +27,12 @@
     "lastName": "User",
     "hasPaidForEvent": true,
     "password": "$2b$10$EMmJTP7IFjhLkuhp7WIF3.QzwvUl/G7DKPDv1J7yF0QylVmJT/oFy"
+  },
+  {
+    "id": "c191c8fd-bee5-4971-a898-0cdd6e548fa5",
+    "username": "testuser",
+    "firstName": "Test",
+    "lastName": "User",
+    "password": "$2b$10$mB62MnYJOPoy/B7usdSl6uNLYRi9BBAgdtagjtAVMULNvxaYu1oTi"
   }
 ]
