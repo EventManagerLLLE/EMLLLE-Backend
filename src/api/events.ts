@@ -28,12 +28,11 @@ router.get('', async (req: Request, res: Response) => {
     if (user && e.organizerId === user.id) return e;
 
     if (
-      // If there is no user signed in and event registration is req or req approval
       (!user && e.registrationOptions.isRegistrationRequired) ||
       (!user && e.registrationOptions.requiresApproval) ||
       (!user && e.isPublic === false)
     ) {
-      return { ...e, organizationId: undefined, participants: undefined };
+      return { id: e.id, title: e.title, location: e.location };
     }
 
     if (!e.isPublic && user) {
@@ -45,9 +44,9 @@ router.get('', async (req: Request, res: Response) => {
         ) {
           return e;
         }
-        return { ...e, participants: undefined };
+        return { id: e.id, title: e.title, location: e.location };
       }
-      return { ...e, organizationId: undefined, participants: undefined };
+      return { id: e.id, title: e.title, location: e.location };
     }
     if (e.isPublic) return e;
   });
