@@ -62,5 +62,19 @@
     "firstName": "luka",
     "lastName": "luka",
     "password": "$2b$10$q9Idwt70rCenZIiIy.gmpOO56xSZaI5Pr5q67cUai9a8GVqAI/Kyi"
+  },
+  {
+    "id": "47b1e0e3-2d2b-4464-8dfa-5fa9c4e15a8e",
+    "username": "luka",
+    "firstName": "luka",
+    "lastName": "luka",
+    "password": "$2b$10$3GRd3beEhmU9XG3O70yMU.KtR.Bj8kQJxG5BCELSb1vTcymhKqcJi"
+  },
+  {
+    "id": "29172886-6773-4f6f-a4fb-589e54a2a2bf",
+    "username": "luka2",
+    "firstName": "luka",
+    "lastName": "luka",
+    "password": "1234567"
   }
 ]
