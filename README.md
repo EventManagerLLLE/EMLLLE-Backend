@@ -1,6 +1,6 @@
 # EMLLLE-Backend
 
-## The Project is about Event Management
+## This Project is about Event Management
 
 - ## Project Structure
   The primary directories and files in the project are structured as follows:
