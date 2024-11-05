@@ -62,5 +62,12 @@
     "firstName": "luka",
     "lastName": "luka",
     "password": "$2b$10$q9Idwt70rCenZIiIy.gmpOO56xSZaI5Pr5q67cUai9a8GVqAI/Kyi"
+  },
+  {
+    "id": "54e8f648-9c16-42ff-8e68-d9e8e1025dcc",
+    "username": "noobslayer",
+    "firstName": "noob",
+    "lastName": "slayer",
+    "password": "$2b$10$jogMxqUalQNn5FMTxyks4e840aiP78/lvWPRD7cI4urQqXSifuXsG"
   }
 ]
