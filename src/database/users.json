@@ -90,5 +90,12 @@
     "firstName": "lion",
     "lastName": "llos",
     "password": "$2b$10$jYGRndM8TMhIUjWgnNi1QOhnhyQuhbwBW0yae48NXY2GuBLFhde5i"
+  },
+  {
+    "id": "b9dd4890-201b-4350-9a52-4ac026155fac",
+    "username": "testee",
+    "firstName": "123456",
+    "lastName": "123445",
+    "password": "$2b$10$4Hu01LLZ5iPQhYUJiXdVZuZr/i0aS2SsCF1PvcqFHTbAyop3UIny2"
   }
 ]
