@@ -133,5 +133,23 @@
       "requiresPayment": false,
       "allowMultipleOptions": true
     }
+  },
+  {
+    "id": "c15648ef-1d16-4526-b9cc-c20f6a1cc11e",
+    "organizationId": "559a60f8-e36f-49c5-b1bf-d4f79b048a7b",
+    "organizerId": "0683327f-08fb-4d72-8e91-9a2ad79242d5",
+    "title": "qwe",
+    "date": "2024-12-22",
+    "location": {
+      "name": "skola"
+    },
+    "description": "funparty",
+    "isPublic": true,
+    "registrationOptions": {
+      "isRegistrationRequired": false,
+      "requiresApproval": false,
+      "requiresPayment": false,
+      "allowMultipleOptions": false
+    }
   }
 ]

@@ -46,8 +46,8 @@ app.get('/protected', authenticateToken, (req, res) => {
 });
 
 // Apply the authentication middleware to the existing routes that need protection
-app.use('/api/events/', authenticateToken, eventsRoutes);
 app.use('/api/organizations/', authenticateToken, organizationsRoutes);
+app.use('/api/events/', authenticateToken, eventsRoutes);
 
 // Apply user routes without authentication middleware
 app.use('/api/users/', userRoutes);

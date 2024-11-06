@@ -83,5 +83,12 @@
     "firstName": "luka",
     "lastName": "luka",
     "password": "1234567"
+  },
+  {
+    "id": "0683327f-08fb-4d72-8e91-9a2ad79242d5",
+    "username": "lol123",
+    "firstName": "lion",
+    "lastName": "llos",
+    "password": "$2b$10$jYGRndM8TMhIUjWgnNi1QOhnhyQuhbwBW0yae48NXY2GuBLFhde5i"
   }
 ]

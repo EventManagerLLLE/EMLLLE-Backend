@@ -55,7 +55,7 @@ router.get('', async (req: Request, res: Response) => {
 });
 
 // Get event by ID
-router.get(':id', async (req: Request, res: Response) => {
+router.get('/:id', async (req: Request, res: Response) => {
   const events = await readJSONFile(eventsFilePath);
   const event = events.find((e: Event) => e.id === req.params.id);
   if (!event) return res.status(404).send('Event not found');
