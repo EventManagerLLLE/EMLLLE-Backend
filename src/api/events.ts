@@ -145,9 +145,13 @@ router.post('/:id/request-participation', authenticateToken, async (req: Request
 
   const userData: User[] = await readJSONFile('database/users.json');
   const userToAdd = userData.find((u: User) => u.id === user!.id);
-  const eventIdex = events.findIndex((e: Event) => e.id === req.params.id);
+  const eventIndex = events.findIndex((e: Event) => e.id === req.params.id);
 
-  if (eventIdex === -1 || !userToAdd) return res.status(404).send('Event not found');
+  if (eventIndex === -1 || !userToAdd) return res.status(404).send('Event not found');
+
+  // Check if the user is already a participant in the event
+  const isAlreadyParticipant = events[eventIndex].participants?.some((p) => p.id === userToAdd.id);
+  if (isAlreadyParticipant) return res.status(400).send('User is already registered for this event');
 
   const participant: Participant = {
     id: userToAdd.id!,
@@ -158,18 +162,18 @@ router.post('/:id/request-participation', authenticateToken, async (req: Request
     registrationDate: new Date(),
   };
 
-  events[eventIdex].participants
-    ? events[eventIdex].participants.push(participant)
-    : (events[eventIdex].participants = [participant]);
+  // Add the participant to the event's participants array
+  events[eventIndex].participants
+    ? events[eventIndex].participants.push(participant)
+    : (events[eventIndex].participants = [participant]);
 
-  // Validate the new event data
-
-  const parsedEvent = eventSchema.safeParse(events[eventIdex]);
+  // Validate the updated event data
+  const parsedEvent = eventSchema.safeParse(events[eventIndex]);
   if (!parsedEvent.success) {
     return res.status(400).send(parsedEvent.error.errors);
   }
 
-  events.push(parsedEvent.data);
+  // Save the updated events array back to the file
   await writeJSONFile(eventsFilePath, events);
   res.status(201).send(parsedEvent.data);
 });
