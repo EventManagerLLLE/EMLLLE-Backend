@@ -110,7 +110,6 @@ router.patch(':id', authenticateToken, async (req: Request, res: Response) => {
   res.send(eventIndex);
 });
 
-// Always fetch all participants, and always send all participants
 router.patch(':id/participants', authenticateToken, async (req: Request, res: Response) => {
   const user = decodeToken(req);
   const editEventParticipants = zodParser<EditEventParticipant>(editEventParticipantSchema, req.body);
@@ -140,20 +139,20 @@ router.delete(':id', authenticateToken, async (req: Request, res: Response) => {
   }
 });
 
-// Create new event (protected)
 router.post(':id/request-participation', authenticateToken, async (req: Request, res: Response) => {
   const user = decodeToken(req);
   const events: Event[] = await readJSONFile(eventsFilePath);
 
-  const userData: User = await readJSONFile('database/users.json');
+  const userData: User[] = await readJSONFile('database/users.json');
+  const userToAdd = userData.find((u: User) => u.id === user!.id);
   const eventIdex = events.findIndex((e: Event) => e.id === req.params.id);
 
-  if (eventIdex === -1) return res.status(404).send('Event not found');
+  if (eventIdex === -1 || !userToAdd) return res.status(404).send('Event not found');
 
   const participant: Participant = {
-    id: userData!.id!,
-    firstName: userData.firstName,
-    lastName: userData.lastName,
+    id: userToAdd.id!,
+    firstName: userToAdd.firstName,
+    lastName: userToAdd.lastName,
     hasPaid: false,
     isApproved: false,
     registrationDate: new Date(),
