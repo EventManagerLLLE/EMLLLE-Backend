@@ -97,5 +97,12 @@
     "firstName": "123456",
     "lastName": "123445",
     "password": "$2b$10$4Hu01LLZ5iPQhYUJiXdVZuZr/i0aS2SsCF1PvcqFHTbAyop3UIny2"
+  },
+  {
+    "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+    "username": "Lucas",
+    "firstName": "Lucas",
+    "lastName": "Lucas123",
+    "password": "$2b$10$GxX8drhMkjnhTMAEwEvBKe7XXjQmajNUKOmrD4szXR7OEpmP/GydC"
   }
 ]

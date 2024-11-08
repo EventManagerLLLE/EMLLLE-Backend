@@ -139,7 +139,7 @@ router.delete(':id', authenticateToken, async (req: Request, res: Response) => {
   }
 });
 
-router.post(':id/request-participation', authenticateToken, async (req: Request, res: Response) => {
+router.post('/:id/request-participation', authenticateToken, async (req: Request, res: Response) => {
   const user = decodeToken(req);
   const events: Event[] = await readJSONFile(eventsFilePath);
 

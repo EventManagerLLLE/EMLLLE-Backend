@@ -2,20 +2,20 @@ import { z } from 'zod';
 
 export const participant = z.object({
   id: z.string().uuid(),
-  firstName: z.string().min(3),
-  lastName: z.string().min(3),
+  firstName: z.string().min(1),
+  lastName: z.string().min(1),
   hasPaid: z.boolean().optional(),
   isApproved: z.boolean().optional(),
-  registrationDate: z.date().optional(),
+  registrationDate: z.coerce.date().optional(),
 });
 
 export type Participant = z.infer<typeof participant>;
 
 const registrationOptions = z.object({
-  isRegistrationRequired: z.boolean(),
-  requiresApproval: z.boolean(),
-  requiresPayment: z.boolean(),
-  allowMultipleOptions: z.boolean(),
+  isRegistrationRequired: z.boolean().optional(),
+  requiresApproval: z.boolean().optional(),
+  requiresPayment: z.boolean().optional(),
+  allowMultipleOptions: z.boolean().optional(),
 });
 
 const location = z.object({

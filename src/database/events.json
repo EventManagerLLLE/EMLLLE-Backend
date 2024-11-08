@@ -24,6 +24,22 @@
         "hasPaid": false,
         "isApproved": false,
         "registrationDate": "2024-12-24"
+      },
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:57:24.896Z"
+      },
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:57:38.384Z"
       }
     ]
   },
@@ -78,7 +94,17 @@
       "requiresApproval": true,
       "requiresPayment": true,
       "allowMultipleOptions": false
-    }
+    },
+    "participants": [
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:58:39.525Z"
+      }
+    ]
   },
   {
     "id": "1eb83c2c-c8c9-463a-9750-df6733ddc1ea",
@@ -132,7 +158,17 @@
       "requiresApproval": true,
       "requiresPayment": false,
       "allowMultipleOptions": true
-    }
+    },
+    "participants": [
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:58:45.521Z"
+      }
+    ]
   },
   {
     "id": "c15648ef-1d16-4526-b9cc-c20f6a1cc11e",
@@ -150,6 +186,142 @@
       "requiresApproval": false,
       "requiresPayment": false,
       "allowMultipleOptions": false
+    }
+  },
+  {
+    "id": "f997811a-4bf5-4f65-ae0a-94faac2710ae",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa4",
+    "title": "ptice trcexxx",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "participants": [
+      {
+        "id": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+        "firstName": "223",
+        "lastName": "21",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-12-24T00:00:00.000Z"
+      },
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:57:24.896Z"
+      }
+    ],
+    "isPublic": false,
+    "registrationOptions": {
+      "isRegistrationRequired": true,
+      "requiresApproval": true,
+      "requiresPayment": false,
+      "allowMultipleOptions": false
+    }
+  },
+  {
+    "id": "f997811a-4bf5-4f65-ae0a-94faac2710ae",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa4",
+    "title": "ptice trcexxx",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "participants": [
+      {
+        "id": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+        "firstName": "223",
+        "lastName": "21",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-12-24T00:00:00.000Z"
+      },
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:57:24.896Z"
+      },
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:57:38.384Z"
+      }
+    ],
+    "isPublic": false,
+    "registrationOptions": {
+      "isRegistrationRequired": true,
+      "requiresApproval": true,
+      "requiresPayment": false,
+      "allowMultipleOptions": false
+    }
+  },
+  {
+    "id": "bf1a33ef-cee5-4554-a604-122d9053d164",
+    "organizationId": "42248e05-29d1-49e6-956a-c4e295bc0cc4",
+    "organizerId": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
+    "title": "ptice trce",
+    "date": "2024-12-24",
+    "location": {
+      "name": "stan"
+    },
+    "description": "vid kyrkan",
+    "participants": [
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:58:39.525Z"
+      }
+    ],
+    "isPublic": false,
+    "registrationOptions": {
+      "isRegistrationRequired": true,
+      "requiresApproval": true,
+      "requiresPayment": true,
+      "allowMultipleOptions": false
+    }
+  },
+  {
+    "id": "99d14aa5-933b-4d37-be23-257fc8835c91",
+    "organizationId": "06b1e6ac-a9f5-4274-be4c-3a5dd49fd207",
+    "organizerId": "54e8f648-9c16-42ff-8e68-d9e8e1025dcc",
+    "title": "sa",
+    "date": "2024-11-09",
+    "location": {
+      "name": "aa"
+    },
+    "description": "sd",
+    "participants": [
+      {
+        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+        "firstName": "Lucas",
+        "lastName": "Lucas123",
+        "hasPaid": false,
+        "isApproved": false,
+        "registrationDate": "2024-11-08T13:58:45.521Z"
+      }
+    ],
+    "isPublic": true,
+    "registrationOptions": {
+      "isRegistrationRequired": false,
+      "requiresApproval": true,
+      "requiresPayment": false,
+      "allowMultipleOptions": true
     }
   }
 ]
