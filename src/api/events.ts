@@ -178,6 +178,22 @@ router.post('/:id/request-participation', authenticateToken, async (req: Request
   res.status(201).send(parsedEvent.data);
 });
 
+// Cancel event registration
+router.delete('/:id/cancel', authenticateToken, async (req: Request, res: Response) => {
+  const user = decodeToken(req);
+  const events = await readJSONFile(eventsFilePath);
+
+  const eventIndex = events.findIndex((event: Event) => event.id === req.params.id);
+  if (eventIndex === -1) return res.status(404).send('Event not found');
+
+  const participantIndex = events[eventIndex].participants?.findIndex((p: Participant) => p.id === user!.id);
+  if (participantIndex === -1) return res.status(404).send('User not registered for this event');
+
+  events[eventIndex].participants.splice(participantIndex, 1);
+  await writeJSONFile(eventsFilePath, events);
+  res.status(200).send({ message: 'Successfully canceled registration.' });
+});
+
 import { ZodError, ZodSchema } from 'zod';
 import { User } from '../schemas/userSchema';
 

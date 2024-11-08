@@ -107,16 +107,7 @@
       "requiresPayment": true,
       "allowMultipleOptions": false
     },
-    "participants": [
-      {
-        "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
-        "firstName": "Lucas",
-        "lastName": "Lucas123",
-        "hasPaid": false,
-        "isApproved": false,
-        "registrationDate": "2024-11-08T14:12:11.811Z"
-      }
-    ]
+    "participants": []
   },
   {
     "id": "9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
