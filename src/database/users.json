@@ -1,31 +1,9 @@
 [
   {
-    "id": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
-    "username": "testuser",
-    "firstName": "Test",
-    "lastName": "User",
-    "hasPaidForEvent": true,
-    "password": "$2b$10$EMmJTP7IFjhLkuhp7WIF3.QzwvUl/G7DKPDv1J7yF0QylVmJT/oFy"
-  },
-  {
-    "id": "c191c8fd-bee5-4971-a898-0cdd6e548fa5",
-    "username": "testuser",
-    "firstName": "Test",
-    "lastName": "User",
-    "password": "$2b$10$mB62MnYJOPoy/B7usdSl6uNLYRi9BBAgdtagjtAVMULNvxaYu1oTi"
-  },
-  {
-    "id": "7024c066-92d8-44bf-adb9-d5c05ad11d38",
-    "username": "testuser",
-    "firstName": "Test",
-    "lastName": "User",
-    "password": "$2b$10$ytfuIHHhi39lOOlosjPj2uRVSwhhrsx40ZXV5O2DehPCo1LH7RLp6"
-  },
-  {
-    "id": "c74b31b2-8d03-4778-ba06-b47736cd20b2",
-    "username": "testuser",
-    "firstName": "Test",
-    "lastName": "User",
-    "password": "$2b$10$e8Ss7BoXNYj9qepr3TdTVesf6sZYtuatxMgW/.bF8CAyXc4gbhxEq"
+    "id": "a77b9eb2-263d-46ed-ae35-c40e21bbf110",
+    "username": "Lucas",
+    "firstName": "Lucas",
+    "lastName": "Lucas123",
+    "password": "$2b$10$GxX8drhMkjnhTMAEwEvBKe7XXjQmajNUKOmrD4szXR7OEpmP/GydC"
   }
 ]

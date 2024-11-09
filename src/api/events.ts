@@ -147,9 +147,13 @@ router.post('/:id/request-participation', authenticateToken, async (req: Request
 
   const userData: User[] = await readJSONFile('database/users.json');
   const userToAdd = userData.find((u: User) => u.id === user!.id);
-  const eventIdex = events.findIndex((e: Event) => e.id === req.params.id);
+  const eventIndex = events.findIndex((e: Event) => e.id === req.params.id);
 
-  if (eventIdex === -1 || !userToAdd) return res.status(404).send('Event not found');
+  if (eventIndex === -1 || !userToAdd) return res.status(404).send('Event not found');
+
+  // Check if the user is already a participant in the event
+  const isAlreadyParticipant = events[eventIndex].participants?.some((p) => p.id === userToAdd.id);
+  if (isAlreadyParticipant) return res.status(400).send('User is already registered for this event');
 
   const participant: Participant = {
     id: userToAdd.id!,
@@ -160,19 +164,35 @@ router.post('/:id/request-participation', authenticateToken, async (req: Request
     registrationDate: new Date().toISOString(),
   };
 
-  events[eventIdex].participants
-    ? events[eventIdex].participants.push(participant)
-    : (events[eventIdex].participants = [participant]);
+  // Add the participant to the event's participants array
+  events[eventIndex].participants
+    ? events[eventIndex].participants.push(participant)
+    : (events[eventIndex].participants = [participant]);
 
-  // Validate the new event data
-
-  const parsedEvent = eventSchema.safeParse(events[eventIdex]);
+  // Validate the updated event data
+  const parsedEvent = eventSchema.safeParse(events[eventIndex]);
   if (!parsedEvent.success) {
     return res.status(400).send(parsedEvent.error.errors);
   }
 
   await writeJSONFile(eventsFilePath, events);
   res.status(201).send(parsedEvent.data);
+});
+
+// Cancel event registration
+router.delete('/:id/cancel', authenticateToken, async (req: Request, res: Response) => {
+  const user = decodeToken(req);
+  const events = await readJSONFile(eventsFilePath);
+
+  const eventIndex = events.findIndex((event: Event) => event.id === req.params.id);
+  if (eventIndex === -1) return res.status(404).send('Event not found');
+
+  const participantIndex = events[eventIndex].participants?.findIndex((p: Participant) => p.id === user!.id);
+  if (participantIndex === -1) return res.status(404).send('User not registered for this event');
+
+  events[eventIndex].participants.splice(participantIndex, 1);
+  await writeJSONFile(eventsFilePath, events);
+  res.status(200).send({ message: 'Successfully canceled registration.' });
 });
 
 import { ZodError, ZodSchema } from 'zod';
