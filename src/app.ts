@@ -1,7 +1,7 @@
+import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import cors from 'cors';
 import eventsRoutes from './api/events';
 import organizationsRoutes from './api/organizations';
 import userRoutes from './api/users';

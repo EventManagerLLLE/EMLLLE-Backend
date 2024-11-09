@@ -110,7 +110,8 @@ router.patch(':id', authenticateToken, async (req: Request, res: Response) => {
   res.send(eventIndex);
 });
 
-router.patch(':id/participants', authenticateToken, async (req: Request, res: Response) => {
+// Update event participants (protected)
+router.patch('/:id/participants', authenticateToken, async (req: Request, res: Response) => {
   const user = decodeToken(req);
   const editEventParticipants = zodParser<EditEventParticipant>(editEventParticipantSchema, req.body);
 
@@ -125,7 +126,7 @@ router.patch(':id/participants', authenticateToken, async (req: Request, res: Re
 });
 
 // Delete event (protected)
-router.delete(':id', authenticateToken, async (req: Request, res: Response) => {
+router.delete('/:id', authenticateToken, async (req: Request, res: Response) => {
   const user = decodeToken(req);
 
   let events: Event[] = await readJSONFile(eventsFilePath);
@@ -139,7 +140,8 @@ router.delete(':id', authenticateToken, async (req: Request, res: Response) => {
   }
 });
 
-router.post(':id/request-participation', authenticateToken, async (req: Request, res: Response) => {
+// Request participation in event (protected)
+router.post('/:id/request-participation', authenticateToken, async (req: Request, res: Response) => {
   const user = decodeToken(req);
   const events: Event[] = await readJSONFile(eventsFilePath);
 
@@ -155,7 +157,7 @@ router.post(':id/request-participation', authenticateToken, async (req: Request,
     lastName: userToAdd.lastName,
     hasPaid: false,
     isApproved: false,
-    registrationDate: new Date(),
+    registrationDate: new Date().toISOString(),
   };
 
   events[eventIdex].participants
@@ -169,7 +171,6 @@ router.post(':id/request-participation', authenticateToken, async (req: Request,
     return res.status(400).send(parsedEvent.error.errors);
   }
 
-  events.push(parsedEvent.data);
   await writeJSONFile(eventsFilePath, events);
   res.status(201).send(parsedEvent.data);
 });

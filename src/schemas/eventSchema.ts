@@ -6,7 +6,7 @@ export const participant = z.object({
   lastName: z.string().min(3),
   hasPaid: z.boolean().optional(),
   isApproved: z.boolean().optional(),
-  registrationDate: z.date().optional(),
+  registrationDate: z.string().optional(),
 });
 
 export type Participant = z.infer<typeof participant>;

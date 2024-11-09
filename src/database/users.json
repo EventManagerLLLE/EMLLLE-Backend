@@ -1,26 +1,5 @@
 [
   {
-    "id": "1",
-    "username": "johndoe",
-    "firstName": "John",
-    "lastName": "Doe",
-    "hasPaidForEvent": false
-  },
-  {
-    "id": "e2733265-ecab-41db-9a0c-575d5b2530d0",
-    "username": "jddohndoe",
-    "firstName": "Jdohn",
-    "lastName": "Ddoe",
-    "hasPaidForEvent": true
-  },
-  {
-    "id": "91ec795d-3f1f-4a4b-b9aa-985e16acfe92",
-    "username": "luka",
-    "firstName": "Luka",
-    "lastName": "Arsenijevic",
-    "hasPaidForEvent": true
-  },
-  {
     "id": "f9db18f2-b79c-4449-a6ca-cff6217a6fa5",
     "username": "testuser",
     "firstName": "Test",
@@ -48,54 +27,5 @@
     "firstName": "Test",
     "lastName": "User",
     "password": "$2b$10$e8Ss7BoXNYj9qepr3TdTVesf6sZYtuatxMgW/.bF8CAyXc4gbhxEq"
-  },
-  {
-    "id": "c0113fdc-65e7-4b06-bd15-d82fc4077a11",
-    "username": "luka",
-    "firstName": "luka",
-    "lastName": "luka",
-    "password": "$2b$10$gqrsBH9pGeVeP9NE9CQ0jeNF4QSZ16c97bQmag5Tw.P1lFP6f6zZy"
-  },
-  {
-    "id": "948cdd8c-8c60-442a-83df-d953d885303b",
-    "username": "luka",
-    "firstName": "luka",
-    "lastName": "luka",
-    "password": "$2b$10$q9Idwt70rCenZIiIy.gmpOO56xSZaI5Pr5q67cUai9a8GVqAI/Kyi"
-  },
-  {
-    "id": "54e8f648-9c16-42ff-8e68-d9e8e1025dcc",
-    "username": "noobslayer",
-    "firstName": "noob",
-    "lastName": "slayer",
-    "password": "$2b$10$jogMxqUalQNn5FMTxyks4e840aiP78/lvWPRD7cI4urQqXSifuXsG"
-  },
-  {
-    "id": "47b1e0e3-2d2b-4464-8dfa-5fa9c4e15a8e",
-    "username": "luka",
-    "firstName": "luka",
-    "lastName": "luka",
-    "password": "$2b$10$3GRd3beEhmU9XG3O70yMU.KtR.Bj8kQJxG5BCELSb1vTcymhKqcJi"
-  },
-  {
-    "id": "29172886-6773-4f6f-a4fb-589e54a2a2bf",
-    "username": "luka2",
-    "firstName": "luka",
-    "lastName": "luka",
-    "password": "1234567"
-  },
-  {
-    "id": "0683327f-08fb-4d72-8e91-9a2ad79242d5",
-    "username": "lol123",
-    "firstName": "lion",
-    "lastName": "llos",
-    "password": "$2b$10$jYGRndM8TMhIUjWgnNi1QOhnhyQuhbwBW0yae48NXY2GuBLFhde5i"
-  },
-  {
-    "id": "b9dd4890-201b-4350-9a52-4ac026155fac",
-    "username": "testee",
-    "firstName": "123456",
-    "lastName": "123445",
-    "password": "$2b$10$4Hu01LLZ5iPQhYUJiXdVZuZr/i0aS2SsCF1PvcqFHTbAyop3UIny2"
   }
 ]
